@@ -1,0 +1,36 @@
+@import "../../styles/base";
+
+.SSwitch-box {
+  @include wh(40px, 20px);
+  background-color: $backGround_red;
+  border-radius: 10px;
+  margin-left: 13px;
+  position: relative;
+  transition: all 0.2s;
+
+  &-circle {
+    position: absolute;
+    top: -3px;
+    @include wh(26px, 26px);
+    background: #FFFFFF;
+    box-shadow: 0 0 4px 0 rgba(36, 36, 36, 0.12);
+    border-radius: 100%;
+    transition: all 0.2s;
+  }
+}
+
+.close {
+  background-color: $backGround_blackD1;
+
+  &-circle {
+    left: -13px;
+  }
+}
+
+.open {
+  background-color: $backGround_red;
+
+  &-circle {
+    left: 27px;
+  }
+}

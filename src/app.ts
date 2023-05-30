@@ -1,13 +1,15 @@
-import Vue from 'vue'
-import './app.less'
+import { PropsWithChildren } from 'react'
+import { useLaunch } from '@tarojs/taro'
+import './app.scss'
 
-const App = {
-  onShow (options) {
-  },
-  render(h) {
-    // this.$slots.default 是将要会渲染的页面
-    return h('block', this.$slots.default)
-  }
+function App({ children }: PropsWithChildren) {
+
+  useLaunch(() => {
+    console.log('App launched.')
+  })
+
+  // children 是将要会渲染的页面
+  return children
 }
 
 export default App

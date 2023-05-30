@@ -1,0 +1,78 @@
+@import "../../styles/base";
+
+.FormItem-box {
+  padding: 0 12px;
+  height: 62px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  &-left {
+    width: 96px;
+    @include fc(14px, $font_black);
+  }
+
+  &-right {
+    &-input {
+      min-height: 0 !important;
+      @include fc(14px, $font_black);
+    }
+
+    &-placeholder {
+      @include fc(14px, $backGround_blackD1);
+    }
+
+  }
+
+  &-modalContent {
+    margin-top: 64px;
+    @include wh(100%, calc(66vh - 64px));
+    //background-color: $backGround_blackD1;
+
+    &-title {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 0 12px 19px 12px;
+      width: 100%;
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+
+      &-titleItem {
+        @include fc(14px, $font_black);
+        margin-right: 30px;
+        position: relative;
+      }
+
+      &-titleItem::after {
+        content: "";
+        display: block;
+        @include wh(20px, 2px);
+        border-radius: 1px;
+        position: absolute;
+        left: 11px;
+        bottom: -6px;
+        background-color: $backGround_red;
+      }
+
+
+      &-item {
+        @include fc(14px, $font_black);
+        margin-right: 30px;
+      }
+    }
+
+    &-content {
+      @include wh(100%, calc(66vh - 64px - 33px));
+      padding: 0 12px;
+      overflow: scroll;
+
+      &-item {
+        padding: 16px 0;
+        @include fc(14px, $font_black);
+      }
+    }
+  }
+}
+
+
