@@ -3,7 +3,7 @@
 module.exports = {
   presets: [
     ['taro', {
-      framework: 'vue',
+      framework: 'react',
       ts: true
     }]
   ]
