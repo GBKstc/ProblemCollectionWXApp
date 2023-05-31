@@ -1,0 +1,31 @@
+@import "../../styles/base";
+
+.WorkForm {
+  @include wh(100%, 100%);
+
+  &-item {
+    position: relative;
+  }
+
+  //&-item:nth-last-child(1) {
+  //  padding-bottom: 30px;
+  //}
+
+  &-item::after {
+    display: block;
+    content: "";
+    @include wh(365px, 1px);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: $backGround_blackF5;
+  }
+
+  &-item:nth-last-child(2)::after {
+    display: none;
+  }
+
+  &-button {
+    margin: 30px 15px 0 15px;
+  }
+}

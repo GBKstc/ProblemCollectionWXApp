@@ -2,26 +2,53 @@
 
 .FormItem-box {
   padding: 0 12px;
-  height: 62px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 
   &-left {
     width: 96px;
+    height: 62px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     @include fc(14px, $font_black);
   }
 
   &-right {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+    width: 255px;
+
+    &-Textarea {
+      //min-height: 62px !important;
+      @include fc(14px, $font_black);
+      //max-height: 62px;
+      //display: flex;
+      //justify-content: flex-start;
+      //align-items: center;
+    }
+
     &-input {
+      height: 62px;
       min-height: 0 !important;
       @include fc(14px, $font_black);
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
     }
 
     &-placeholder {
+      //height: 62px;
+      line-height: 62px;
       @include fc(14px, $backGround_blackD1);
     }
 
+    &-button {
+      margin: 0;
+    }
   }
 
   &-modalContent {
