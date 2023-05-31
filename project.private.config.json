@@ -9,6 +9,20 @@
           "query": "",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/Hygiene/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/Success/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }

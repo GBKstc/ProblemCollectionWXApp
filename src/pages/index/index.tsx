@@ -24,7 +24,13 @@ export default function Index() {
       />
       <HomeModuleImageBox
         content={"卫生处理"}
-        imgSrc={"https://image.beautysaas.com/erp/product/4f82f38e-bce6-4cbd-9984-07b29a2feb9e.png"}/>
+        imgSrc={"https://image.beautysaas.com/erp/product/4f82f38e-bce6-4cbd-9984-07b29a2feb9e.png"}
+        onClick={() => {
+          Taro.navigateTo({
+            url: '/pages/Hygiene/index',
+          })
+        }}
+      />
     </View>
   )
 }

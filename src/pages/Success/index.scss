@@ -1,0 +1,74 @@
+@import "../../styles/base";
+
+.PaySuccess-Page {
+  @include wh(100vw, 100vh);
+  background-color: $backGround_red;
+
+  &-title {
+    padding-top: 18px;
+    text-align: center;
+    @include fc(18px, white);
+  }
+
+  &-content {
+    @include wh(100vw, calc(100vh - 89px));
+    margin-top: 53px;
+    background-color: white;
+    border-radius: $baseBorderRadiusMin $baseBorderRadiusMin 0 0;
+    position: relative;
+
+    &-logo {
+      position: absolute;
+      top: -29px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include wh(72px, 72px);
+      border-radius: 100%;
+      background-color: $backGround_red;
+      border: 3px solid white;
+
+      &-image {
+        @include wh(45px, 45px);
+      }
+    }
+
+    &-remind {
+      position: relative;
+      top: 54px;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &-left {
+        padding: 2px 8px;
+        background-color: $backGround_logo;
+        @include fc(12px, $font_red);
+        margin-right: 8px;
+      }
+
+      &-right {
+        @include fc(14px, $font_red);
+      }
+    }
+
+    &-bottonList {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 276px;
+      position: relative;
+      top: 87px;
+      left: 50px;
+
+      &-botton {
+        width: 128px;
+        color: $font_black66;
+        border: 1px solid #D3D3D3;
+      }
+    }
+  }
+}
